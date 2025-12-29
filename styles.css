@@ -1,0 +1,146 @@
+
+ html, body { 
+            margin: 0; 
+            padding: 0; 
+            background: #ffdae9; 
+            overflow: hidden; 
+        }
+
+        body { 
+            width: 350px; 
+            height: auto; 
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .main-card {
+            background: white;
+            width: 100%;
+            border-radius: 50px;
+            padding: 15px 20px 20px 20px;
+            box-sizing: border-box;
+            border: 6px solid #ffdae9;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .name-title {
+            color: #d63384;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+
+        .pig-animation-container {
+            width: 100%;
+            height: 150px; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        .pig-display {
+            max-width: 140px;
+            max-height: 140px;
+            object-fit: contain;
+            display: block;
+        }
+
+        #bubble {
+            min-height: 18px;
+            color: #ff69b4;
+            font-style: italic;
+            font-size: 13px;
+            margin-bottom: 8px;
+        }
+
+        .stat-row { margin-bottom: 6px; }
+
+        .stat-label { 
+            display: flex; 
+            justify-content: space-between; 
+            color: #d63384; 
+            font-weight: bold; 
+            font-size: 13px;
+            margin-bottom: 2px;
+        }
+
+        .bar-bg { 
+            background: #fff0f5; 
+            height: 10px; 
+            border-radius: 10px; 
+            overflow: hidden;
+        }
+
+        .bar-fill { 
+            background: #ff69b4; 
+            height: 100%; 
+            transition: width 0.4s ease;
+        }
+
+        .btn-grid { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 8px; 
+            margin-top: 10px; 
+        }
+
+        button {
+            border: none;
+            padding: 10px;
+            border-radius: 15px;
+            color: white;
+            font-weight: bold;
+            font-size: 13px;
+            cursor: pointer;
+            transition: transform 0.1s;
+        }
+
+        button:active { transform: scale(0.95); }
+        
+        .btn-feed { background: #ff9fb3; }
+        .btn-play { background: #ff768a; }
+        .btn-sleep { background: #a29bfe; }
+        .btn-clean { background: #ff85b3; }
+        .btn-heal { background: #ffbd9b; }
+        .btn-dance { background: #e84393; }
+
+        input {
+            width: 80%;
+            padding: 10px;
+            border-radius: 20px;
+            border: 2px solid #ffdae9;
+            outline: none;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .stat-label { 
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center;
+        color: #d63384; 
+        font-weight: bold; 
+        font-size: 13px;
+        margin-bottom: 2px;
+    }
+
+    .stat-info {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .stat-icon {
+        width: 30px; 
+        height: 30px;
+        object-fit: contain;
+    }
+    
+
+    #pigImg {
+        transition: opacity 0.3s ease;
+    }
