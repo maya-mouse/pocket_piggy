@@ -3,7 +3,7 @@ export function isCritical(pet) {
 }
 
 export function getIdleGif(pet) {
-    return isCritical(pet) ? "./idle_state/sad_idle.gif" : "./idle_state/idle.gif";
+    return isCritical(pet) ? "./idle_state/sad_idle.gif" : "./idle_state/default_idle.gif";
 }
 
 export function getIdleMessage(pet) {
