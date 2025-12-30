@@ -51,9 +51,9 @@ function setup() {
             const bubble = document.getElementById('bubble');
             const [msg, hun, hap, hel, nrg, gif] = ACTIONS[id];
 
-            if ((id === 'play' || id === 'dance') && pet.energy < 15) { bubble.innerText = "Занадто мало сил... 😴"; return; }
+            if ((id === 'play' || id === 'dance') && pet.energy < 15) { bubble.innerText = "Занадто мало сил... "; return; }
             if (id === 'feed' && pet.hunger >= 100) { bubble.innerText = "Я вже не можу їсти! "; return; }
-            if ((id === 'play' || id === 'dance') && pet.health < 25) { bubble.innerText = "Погано почуваюсь для ігор... 🤒"; return; }
+            if ((id === 'play' || id === 'dance') && pet.health < 25) { bubble.innerText = "Погано почуваюсь для ігор..."; return; }
 
             isBusy = true;
             const img = document.getElementById('pigImg');
