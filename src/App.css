@@ -33,14 +33,52 @@ body {
 .reset-trigger { background: none; border: none; color: #ff69b4; font-size: 18px; cursor: pointer; }
 
 /* 5. Реєстрація та Свинка */
-.onboarding-clean { display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%; gap: 30px; }
-.minimal-input {
-    border: none !important; border-bottom: 1px solid #ffdae9 !important;
-    background: transparent !important; color: #d63384; font-style: italic;
-    width: 200px !important; text-align: center; outline: none; font-size: 16px;
+/* 5. Реєстрація (Елементи один під одним) */
+.onboarding-clean { 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+    gap: 20px; /* Зменшив загальний зазор між свинкою та групою вводу */
 }
-.text-link-btn { background: none; border: none; color: #ffb6c1; font-size: 14px; cursor: pointer; font-style: italic; }
 
+.input-group {
+    display: flex;
+    flex-direction: column; /* СТАВИМО ЕЛЕМЕНТИ В СТОВПЧИК */
+    align-items: center;
+    justify-content: center;
+    gap: 25px; /* Зазор між інпутом та кнопкою */
+    width: 100%;
+}
+
+.minimal-input {
+    border: none !important; 
+    border-bottom: 1px solid #ffdae9 !important;
+    background: transparent !important; 
+    color: #d63384; 
+    font-style: italic;
+    width: 220px !important; /* Трошки розширив для зручності */
+    text-align: center; 
+    outline: none; 
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+
+.text-link-btn { 
+    background: none; 
+    border: none; 
+    color: #ffb6c1; 
+    font-size: 18px;
+    cursor: pointer; 
+    font-style: italic;
+    transition: all 0.3s;
+}
+
+.text-link-btn:hover { 
+    color: #d63384;
+    letter-spacing: 1px; 
+}
 .pig-click-zone { width: 100%; height: 150px; display: flex; align-items: center; justify-content: center; margin-bottom: 5px; transition: transform 0.2; }
 .pig-display { max-width: 140px; max-height: 140px; object-fit: contain; }
 .name-title { color: #d63384; font-size: 20px; font-weight: bold; margin-bottom: 5px; }

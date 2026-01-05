@@ -1,3 +1,4 @@
+import React from 'react';
 import Stats from './components/Stats';
 import Piggy from './components/Piggy';
 import Actions from './components/Actions';
@@ -34,6 +35,8 @@ function App() {
         <div className="pig-animation-container">
           <img src="idle_state/default_idle.gif" className="pig-display" alt="piggy" />
         </div>
+        
+        {}
         <div className="input-group">
           <input 
             type="text" 
@@ -44,7 +47,9 @@ function App() {
           <button className="text-link-btn" onClick={() => {
             const val = document.getElementById('nameInput').value;
             if (val) setPet({ ...pet, name: val });
-          }}>Оселити 𐙚</button>
+          }}>
+            Оселити 𐙚
+          </button>
         </div>
       </div>
     );
@@ -65,7 +70,7 @@ function App() {
         <div className="name-title">{pet.name}</div>
       </div>
 
-      <div className="pig-click-zone" onClick={handlePigClick} style={{ cursor: 'pointer' }}>
+      <div className="pig-click-zone" onClick={handlePigClick}>
         <Piggy pet={pet} gif={currentGif} message={message} />
       </div>
 
